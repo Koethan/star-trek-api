@@ -8,20 +8,36 @@
 		<title>Title in the tab</title>
 
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		
+		<link rel="stylesheet" href="lcars-classic.min.css">
 	</head>
 	<body>
 
-		<h1>Which Pokemon?</h1>
-		<input type="date" name="" value="">
-		<button type="button" name="button">Get Pokemon</button>
+		<h1>Which Star-Trek Species App?</h1>
 
-		<h2>Name?</h2>
-		<img src="img/pokemon.jpeg" alt="">
-		<iframe src="" frameborder="0"></iframe>
-		<h3>Type?</h3>
+		<h2>Enter the name of an alien species below</h2>
 
-		<script type="text/javascript" src="js/main.js"></script>
+		<p>On away missions, it is vital to know the basic facts and characteristics about the aliens you will encouter. Enter the species name of your new friend (or foe) to obtain information about them.</p>
+
+		<input type="text" name="" value="">
+		<div class="buttons">
+			<a class="sunflower" id="getButton">Get Info</a>
+		</div>
+
+		
+		<div class="pics-right">
+			<img src="" alt="" class="border" id="alienImage">
+			<p class="caption" id="alienCaption">Photo</p>
+		</div>
+		<ul class="lcars-list">
+			<li><span>Species Name: </span><span id="alienName"></span></li>
+			<li><span>Homeorld: </span><span id="alienWorld"></span></li>
+			<li><span>Distinguishing Features: </span><span id="alienFeatures"></span></li>
+			<li><span>Interesting Fact(s): </span><span id="alienFacts"></span></li>
+			<li><span>Notable Examples: </span><span id="alienExamples"></span></li>
+		</ul>
+
+		<script src="lcars.js"></script>
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
